@@ -1,0 +1,26 @@
+
+/* 
+    width: largeur
+    height longueur
+    margin: espacement des quatre cotés (0,0,0,0)=>(haut droite bas gauche)
+    img:hover{} lorsque le curseur est sur l'image
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#div1{
+    /* width: 100%; */ /* parce qu'il occupe malgré tout
+     tout l'écran or y' le margin qui parle */
+    border:  1px solid black;
+    background-color: bisque;
+    height: 50px;
+    padding: 10px; /* s'occupe du text a l'interieur et agit com margin */
+    text-align: center;/* centrer le texte à l'intérieur  */
+    margin: 10px 10px 0px 10px;
+    
+    
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+
+</head>
+<body>
+    
+    <Label>Entrez votre nom: </Label>
+    <input type="text" id="fname" onchange="myFunction()">
+    <br><br><br>
+
+<table width="20%" border="1">
+    <tr>
+        <th>Nom</th>
+        <th>prenoms</th>
+    </tr>
+    <tr>
+        <td>Manou</td>
+        <td>Gratien</td>
+    </tr>
+</table>
+<br><br><br>
+<!--Formulaire-->
+<h3>Employment application</h3>
+<!-- action pour le controlleur du bouton d'enregistrment  -->
+<form name="enregistrement" action="" method="post">
+   <p> <label for="name">Nom:</label>
+        <input type="text" id="name" maxlength="50"></p>
+
+    <p><label for="prenom">Prenoms:</label>
+        <input type="text" id="prenom" maxlength="50"></p>
+
+    <p><label for="position">Position:</label>
+        <select name="pos" id="position" >
+            <option value="co">Comptable</option>
+            <option value="re">Receptionnist</option>
+            <option value="ad">Administrateur</option>
+            <option value="sp">Superviseur</option>
+        </select>
+    </p>
+
+    <p><label for="niveau">Niveau d'experience:</label>
+        <select name="exp" id="niv" >
+            <option value="deb">Débutant</option>
+            <option value="am">Amateur</option>
+            <option value="hn">Haut niveau</option>
+            <option value="pro">Professionnel</option>
+        </select>
+    </p>
+
+    <p><label for="type">Type de Job:</label><br><br>
+        &nbsp;&nbsp;&nbsp;temps plein<input type="checkbox" value="temps plein" name="tp" id="type"><br>
+        &nbsp;&nbsp;&nbsp;temporaire <input type="checkbox" value="temporaire" name="temp" id="type"><br>
+        &nbsp;&nbsp;&nbsp;contrat <input type="checkbox" value="contrat" name="cont" id="type"><br>
+    </p>
+
+    <p><label for="fonction">Fonction:</label>
+        Employé<input type="radio" name="donc" value="employé" id="fonction">&nbsp;&nbsp;&nbsp;
+        Chomeur<input type="radio" name="donc" value="chomeur" id="fonction">&nbsp;&nbsp;&nbsp;
+        Etudiant<input type="radio" name="donc" value="etudiant" id="fonction">&nbsp;&nbsp;&nbsp;
+    </p>
+
+    <p><label for="comm">Commentaires:</label>
+        <textarea name="comment" id="comm" cols="30" rows="10"></textarea>
+    </p>
+
+    <input type="submit" value="submit" name="submit">&nbsp;
+    <input type="submit" value="cancel" name="reset">
+
+</form>
+
+
+
+</body>
+<script>
+    function myFunction(){
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+</script>  
+
+</html>
